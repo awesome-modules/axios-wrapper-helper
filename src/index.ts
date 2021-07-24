@@ -8,6 +8,22 @@ export type GeneralConfigType = {
 
 let general_config: GeneralConfigType = { baseDomain: "" };
 
+axios.interceptors.response.use(
+  (response) => response,
+  (err) => {
+    if (err.response) {
+      const { status } = err.response;
+      if (status === 500) {
+        err = {
+          ...err,
+          response: { data: "Server or Network Error", status: 500 },
+        };
+      }
+      return Promise.reject(err);
+    }
+  }
+);
+
 const axios_config = (
   api: string,
   paramsOrObject: Object | null,

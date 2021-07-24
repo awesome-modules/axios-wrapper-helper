@@ -1,6 +1,6 @@
 {
   "name": "axios-wrapper-helper",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A NPM module which provides a helper wrapper for axios",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
