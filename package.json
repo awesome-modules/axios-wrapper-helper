@@ -1,0 +1,31 @@
+{
+  "name": "axios-wrapper-helper",
+  "version": "1.0.6",
+  "description": "A NPM module which provides a helper wrapper for axios",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "run": ""
+  },
+  "keywords": [
+    "async",
+    "promise",
+    "axiosWrapper",
+    "apiRequest"
+  ],
+  "author": "awesome-modules",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "repository": {
+    "url": "https://github.com/awesome-modules/axios-wrapper-helper"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
